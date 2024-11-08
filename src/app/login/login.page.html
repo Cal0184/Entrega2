@@ -1,0 +1,14 @@
+<!-- login.page.html -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container bg-image">
+    <h1 style="color: red;">Bienvenido {{ nombre }}</h1>
+    <ion-button (click)="goBack()">Volver</ion-button> 
+    <ion-button expand="block" [routerLink]="['/database']">Ir a la Base de Datos</ion-button>
+  </div>
+</ion-content>

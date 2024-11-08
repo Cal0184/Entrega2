@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Restablecimiento de Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Restablecimiento</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="container bg-image">
+    <h2>¿Olvidaste tu contraseña?</h2>
+    <p>Por favor, ingresa tu correo electrónico. Te enviaremos un enlace para restablecer tu contraseña.</p>
+
+    <ion-item>
+      <ion-label position="floating">Correo Electrónico</ion-label>
+      <ion-input type="email" placeholder="ejemplo@correo.com"></ion-input>
+    </ion-item>
+
+    <div class="button-container">
+      <ion-button expand="block" (click)="restablecer()">Enviar Enlace de Restablecimiento</ion-button>
+      <ion-button expand="block" color="light" (click)="goBack()">Volver</ion-button>
+    </div>
+  </div>
+</ion-content>
+

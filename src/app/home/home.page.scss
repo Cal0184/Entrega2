@@ -1,0 +1,77 @@
+body, ion-content {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.bg-left, .bg-right {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-left {
+  background-image: url('../images/Vegeta.gif');
+}
+
+.bg-right {
+  background-image: url('../images/Goku.gif');
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px; /* Aumentamos el padding superior e inferior */
+  max-width: 500px;
+  width: 100%;
+}
+
+h1, p {
+  margin: 10px 0; /* Reducimos los márgenes */
+  color: black;
+  font-size: 24px;
+  text-align: center; /* Centramos específicamente los textos */
+}
+
+ion-item {
+  margin: 15px 0;
+  width: 100%;
+  font-size: 18px;
+}
+
+ion-input {
+  font-size: 16px;
+  --padding-start: 10px;
+}
+
+ion-button {
+  margin: 10px 0;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+}

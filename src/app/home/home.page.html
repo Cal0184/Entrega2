@@ -1,0 +1,23 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="bg-left"></div>
+
+    <!-- Contenido central -->
+    <div class="content">
+      <h1>Bienvenido</h1>
+      <p>Inicia sesión o restablece tu contraseña.</p>
+      <ion-item>
+        <ion-input [(ngModel)]="nombre" placeholder="Nombre de Usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="password" type="password" placeholder="Contraseña"></ion-input>
+      </ion-item>
+      <div class="button-container">
+        <ion-button expand="block" (click)="login()">Iniciar sesión</ion-button>
+        <ion-button expand="block" [routerLink]="['/restablecer']">Restablecer Contraseña</ion-button>
+      </div>
+    </div>
+
+    <div class="bg-right"></div>
+  </div>
+</ion-content>
